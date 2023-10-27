@@ -8,7 +8,7 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
-/* basic elements */
+/* basic elements 
 html {
 	margin: 0;
 	padding: 0;
@@ -50,7 +50,7 @@ abbr {
 	}
 
 
-/* specific divs */
+/* specific divs 
 .page-wrapper { 
 	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
@@ -192,3 +192,55 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+	*/
+
+	@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@900&display=swap');
+
+
+	body { 
+		margin: 30px auto;
+		max-width: 800px;
+		padding: 40px;
+	}
+	
+	h1{
+		color:white; 
+		background-color: black;
+		padding: 10px;
+	}
+	p { 
+		margin-top: 10; 
+		text-align: justify;
+		font: 14px 'lora', serif;
+		}
+	h2, h3 { 
+		font: 2em 'montserrat', serif;
+		letter-spacing: 1px; 
+		margin-bottom: 0; 
+		text-transform: uppercase;
+		}
+
+	.intro{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 50px;
+		grid-template-rows: .5fr .5fr 1fr;
+		row-gap: 20px;
+	}
+
+	.summary{
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.preamble{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	.explanation, .requirements{
+		background-color: rgb(237, 237, 237);
+		padding: 20px 100px 20px 100px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	
