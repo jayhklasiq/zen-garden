@@ -242,5 +242,55 @@ footer a:link, footer a:visited {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+	.main supporting{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 50px;
+		grid-template-rows: .5fr .5fr 1fr;
+		row-gap: 20px;
+		}
+	.participation{
+		grid-column: 1/2;
+		grid-row: 2/3;
+		}
+	.benefits{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		}
 
+	.sidebar {
+		margin-right: 20px;
+		position: absolute; 
+		position:fixed;
+		top: 0; 
+		right: 0;
+		}
+
+	.sidebar .wrapper { 
+		font: 9px 'lora', serif;
+		background: rgb(238, 238, 238); 
+		padding: 20px; 
+		margin-top: 50px; 
+		width: 175px; 
+		}
+
+	.sidebar ul {
+		margin: 0;
+		padding: 0;
+		}
+	.sidebar li {
+		line-height: 1.3em; 
+		display: block; 
+		padding-top: 5px; 
+		margin-bottom: 5px;
+		list-style-type: none;
+		}
+	.sidebar li a:link {
+		color: #000000;
+		}
+	.sidebar li a:visited {
+		color: black
+		}
+	
+	
 	
