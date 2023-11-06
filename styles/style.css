@@ -7,7 +7,6 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-
 /* basic elements 
 html {
 	margin: 0;
@@ -194,103 +193,124 @@ footer a:visited {
 	}
 	*/
 
-	@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@900&display=swap");
 
+body {
+	margin: 30px auto;
+	max-width: 800px;
+	padding: 40px;
+}
 
-	body { 
-		margin: 30px auto;
-		max-width: 800px;
-		padding: 40px;
-	}
-	
-	h1{
-		color:white; 
-		background-color: black;
-		padding: 10px;
-	}
-	p { 
-		margin-top: 10; 
-		text-align: justify;
-		font: 14px 'lora', serif;
-		}
-	h2, h3 { 
-		font: 2em 'montserrat', serif;
-		letter-spacing: 1px; 
-		margin-bottom: 0; 
-		text-transform: uppercase;
-		}
+h1 {
+	color: white;
+	background-color: black;
+	padding: 10px;
+}
+p {
+	margin-top: 10;
+	text-align: justify;
+	font: 14px "lora", serif;
+}
+h2,
+h3 {
+	font: 2em "montserrat", serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
 
-	.intro{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 50px;
-		grid-template-rows: .5fr .5fr 1fr;
-		row-gap: 20px;
-	}
+.intro {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	grid-template-rows: 0.5fr 0.5fr 1fr;
+	row-gap: 20px;
+}
 
-	.summary{
-		grid-column: 1/2;
-		grid-row: 2/3;
-	}
-	.preamble{
-		grid-column: 2/3;
-		grid-row: 3/4;
-	}
-	.explanation, .requirements{
-		background-color: rgb(237, 237, 237);
-		padding: 20px 100px 20px 100px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	.main supporting{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 50px;
-		grid-template-rows: .5fr .5fr 1fr;
-		row-gap: 20px;
-		}
-	.participation{
-		grid-column: 1/2;
-		grid-row: 2/3;
-		}
-	.benefits{
-		grid-column: 2/3;
-		grid-row: 3/4;
-		}
+.summary {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.preamble {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+.explanation,
+.requirements {
+	background-color: rgb(237, 237, 237);
+	padding: 20px 100px 20px 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.main supporting {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	grid-template-rows: 0.5fr 0.5fr 1fr;
+	row-gap: 20px;
+}
+.participation {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.benefits {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
 
+.sidebar {
+	margin-right: 20px;
+	/* position: absolute; /*You might want to remove this if you want the position fixed.*/
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.sidebar .wrapper {
+	font: 9px "lora", serif;
+	background: rgb(238, 238, 238);
+	padding: 20px;
+	margin-top: 50px;
+	width: 175px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+.sidebar li {
+	line-height: 1.3em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+.sidebar li a:link {
+	color: #000000;
+}
+.sidebar li a:visited {
+	color: black;
+}
+
+/* ----------Responsiveness*----------*/
+@media (max-width: 1300px) {
 	.sidebar {
-		margin-right: 20px;
-		position: absolute; 
-		position:fixed;
-		top: 0; 
-		right: 0;
-		}
+		position: relative;
+		bottom: 0;
+		width: 760px;
+	}
 
-	.sidebar .wrapper { 
-		font: 9px 'lora', serif;
-		background: rgb(238, 238, 238); 
-		padding: 20px; 
-		margin-top: 50px; 
-		width: 175px; 
-		}
+	.sidebar .wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+		margin-top: 20px;
+		width: 100%;
+	}
+}
 
-	.sidebar ul {
-		margin: 0;
-		padding: 0;
-		}
-	.sidebar li {
-		line-height: 1.3em; 
-		display: block; 
-		padding-top: 5px; 
-		margin-bottom: 5px;
-		list-style-type: none;
-		}
-	.sidebar li a:link {
-		color: #000000;
-		}
-	.sidebar li a:visited {
-		color: black
-		}
-	
-	
-	
+@media (max-width: 900px) {
+	#zen-intro {
+		display: block;
+	}
+}
