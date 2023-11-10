@@ -264,6 +264,7 @@ h3 {
 	position: fixed;
 	top: 0;
 	right: 0;
+	/* width: 100%; */
 }
 
 .sidebar .wrapper {
@@ -271,7 +272,7 @@ h3 {
 	background: rgb(238, 238, 238);
 	padding: 20px;
 	margin-top: 50px;
-	width: 175px;
+	width: 75%;
 }
 
 .sidebar ul {
@@ -299,18 +300,43 @@ h3 {
 		bottom: 0;
 		width: 760px;
 	}
-
-	.sidebar .wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		text-align: center;
-		margin-top: 20px;
-		width: 100%;
-	}
 }
 
 @media (max-width: 900px) {
-	#zen-intro {
+	#zen-intro,
+	#zen-participation,
+	#zen-benefits {
 		display: block;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		/* margin: 0 auto; */
+	}
+}
+
+/* ----------------------------------------------- */
+/* Mobile View */
+@media screen and (max-width: 767px) {
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/* Desktop View */
+@media screen and (max-width: 900px) {
+	/* Select a Design and Archives */
+	.design-selection,
+	.design-archives {
+		grid-row: 1;
+	}
+
+	/* Zen Resources */
+	.zen-resources {
+		grid-column: 1/3;
+		grid-row: 2/3;
 	}
 }
