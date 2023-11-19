@@ -37,7 +37,10 @@ p {
 	column-gap: 50px;
 	grid-template-rows: 0.5fr 0.5fr 1fr;
 	row-gap: 20px;
-	
+	background-image: url("https://images.pexels.com/photos/4194857/pexels-photo-4194857.jpeg?auto=compress&cs=tinysrgb&w=1600");
+	background-position: top right, bottom left;
+	background-repeat: no-repeat;
+	background-size: 500px;
 }
 
 #zen-summary {
