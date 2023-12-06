@@ -204,33 +204,6 @@ footer {
 		grid-row: 3/4;
 	}
 
-	/* #zen-intro:after {
-		content: "";
-		background: url("https://images.pexels.com/photos/1576939/pexels-photo-1576939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-		background-position: bottom right;
-		background-repeat: no-repeat;
-		background-size: 400px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-	} */
-
-	/* div #zen-supporting:after {
-		content: " ";
-		background: url("https://images.pexels.com/photos/12762122/pexels-photo-12762122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-		background-position: left;
-		background-repeat: no-repeat;
-		background-size: 400px 50%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-	} */
 	div #zen-participation:after {
 		content: "";
 		width: 100%;
