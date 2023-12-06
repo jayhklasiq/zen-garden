@@ -176,7 +176,7 @@ footer {
 	color: rgb(255, 247, 247);
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
 	.sidebar {
 		position: relative;
 		bottom: 0;
