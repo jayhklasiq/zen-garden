@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@900&display=swap");
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	background-color: #e2e2e2;
+	opacity: 1;
+	background-image: radial-gradient(circle at center center, #000000, #e2e2e2), repeating-radial-gradient(circle at center center, #000000, #000000, 5px, transparent 10px, transparent 5px);
+	background-blend-mode: multiply;
+}
+
+.page-wrapper {
+	background-color: rgb(28, 28, 28);
+	padding: 0px 75px;
+}
+
+#zen-intro h2 abbr {
+	font-size: 5rem;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#zen-preamble h3:last-child {
+	font-size: 5rem;
+	font-weight: 900;
+}
+
+h1 {
+	color: rgb(255, 247, 247);
+	background-color: rgb(64, 64, 64);
+	padding: 10px;
+}
+
+h2,
+h3 {
+	font: 2em "montserrat", serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: rgb(255, 102, 102);
+}
+
+p {
+	margin-top: 10px;
+	text-align: left;
+	font: 14px "lora", serif;
+	color: rgb(255, 247, 247);
+}
+
+footer a {
+	text-decoration: underline;
+	color: rgb(255, 102, 102);
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: rgb(255, 247, 247);
+}
+
+#zen-intro {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	grid-template-rows: 0.5fr 0.5fr 1fr;
+	row-gap: 20px;
+	background: url("https://images.pexels.com/photos/1576939/pexels-photo-1576939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 400px;
+}
+
+#zen-summary {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.summary a {
+	text-decoration: underline;
+	color: rgb(255, 247, 247);
+}
+
+#zen-preamble {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+#zen-explanation,
+#zen-requirements {
+	background-color: rgb(64, 64, 64);
+	padding: 20px 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#zen-explanation {
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+
+#zen-participation {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.participation a {
+	text-decoration: underline;
+	color: rgb(255, 247, 247);
+}
+
+#zen-benefits {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+div #zen-supporting {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	grid-template-rows: repeat(4, 0.5fr);
+	row-gap: 20px;
+	background: url("https://images.pexels.com/photos/12762122/pexels-photo-12762122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 400px 50%;
+}
+
+#zen-requirements {
+	grid-column: 1/3;
+	grid-row: 4/5;
+}
+
+.requirements a {
+	text-decoration: underline;
+	color: rgb(255, 247, 247);
+}
+
+footer {
+	grid-row: 5/6;
+	grid-column: 1/3;
+	text-align: right;
+}
+
+.sidebar {
+	margin-right: 50px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.wrapper {
+	font: 9px "lora", serif;
+	background-color: rgb(28, 28, 28);
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	line-height: 1.3em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	color: rgb(255, 247, 247);
+}
+
+.sidebar li a:link {
+	color: rgb(255, 247, 247);
+}
+
+.sidebar li a:visited {
+	color: rgb(255, 247, 247);
+}
+
+@media (max-width: 1500px) {
+	.sidebar {
+		position: relative;
+		bottom: 0;
+		text-align: center;
+		margin: 0;
+		width: 90%;
+	}
+}
+
+@media (max-width: 1400px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	body {
+		text-align: center;
+	}
+
+	#zen-intro,
+	div #zen-supporting {
+		display: block;
+		background: none;
+	}
+
+	#zen-explanation,
+	#zen-requirements {
+		padding: 10px 50px;
+	}
+
+	h2,
+	h3 {
+		font-size: 1.6em;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto 1fr;
+		width: 100%;
+		max-width: none;
+	}
+
+	#design-selection {
+		grid-row: 1/2;
+	}
+
+	#design-archives {
+		grid-row: 3/4;
+	}
+
+	div #zen-participation:after {
+		content: "";
+		width: 100%;
+		height: 250px;
+		padding-top: 56.25%; /* Aspect ratio, adjust as needed */
+		display: block;
+		background: url("https://images.pexels.com/photos/12762122/pexels-photo-12762122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+		background-size: cover;
+		clear: both;
+	}
+
+	#zen-intro:after {
+		content: "";
+		width: 100%;
+		height: 400px;
+		padding-top: 56.25%; /* Aspect ratio, adjust as needed */
+		display: block;
+		background: url("https://images.pexels.com/photos/1576939/pexels-photo-1576939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+		background-size: cover;
+		clear: both;
+	}
+}
